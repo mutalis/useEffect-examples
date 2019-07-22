@@ -14,6 +14,7 @@ function Counter() {
   }, [])
 
   const [count, setCount] = useState(0)
+  // as a side effect (result) of [value] (state) changing, do this.
   useEffect(() => {
     document.title = `You clicked ${count} times`
   }, [count])
